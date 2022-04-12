@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+  <div id="app">
+    <header></header>
+    <main>
+      <div class="container">
+        <div v-for="disco in arrDischi" class="card">
+          <img :src="disco.poster" alt="">
+          <h2>{{disco.title}}</h2>
+          <p>{{disco.author}}</p>
+          <p>{{disco.year}}</p>
+        </div>
+      </div>
+    </main>
+  </div>
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
