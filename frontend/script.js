@@ -2,8 +2,7 @@ new Vue({
   el: '#app',
   data: { 
     arrDischi : [],
-    arrGen: null,
-    genValue : document.querySelector('#gen').value
+    arrGen: null
 
   },
   methods: {
