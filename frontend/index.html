@@ -9,10 +9,18 @@
 </head>
 <body>
   <div id="app">
-    <header></header>
+    <header>
+      <select @change="changedValue" name="" id="gen">
+        <option value="all">Tutti</option>
+        <option value="Rock">Rock</option>
+        <option value="Metal">Metal</option>
+        <option value="Jazz">Jazz</option>
+        <option value="Pop">Pop</option>
+      </select>
+    </header>
     <main>
       <div class="container">
-        <div v-for="disco in arrDischi" class="card">
+        <div v-for="disco in (arrGen === null ? arrDischi : arrGen)" class="card">
           <img :src="disco.poster" alt="">
           <h2>{{disco.title}}</h2>
           <p>{{disco.author}}</p>

@@ -11,6 +11,9 @@ html{
 header {
   height: 6rem;
   background-color: rgb(49, 49, 153);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
